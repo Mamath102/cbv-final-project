@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends 'cbvapp/base.html' %}
+{% block content %}
+<h1>Employee Dashboard Information</h1><br>
+{% for employee in employees_list %}
+<a href="/detail/{{employee.id}}">{{employee.ename}}</a><br>
+{% endfor %}<br>
+<a href="/create" class="btn btn-primary">Insert New Employee Data</a>
+{% endblock %}

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'cbvapp/base.html' %}
+{% block content %}
+<h2>{{employees.ename}} Information</h2><hr>
+<ul>
+    <li>Employee ID : {{employees.empid}}</li>
+    <li>Employee Salary : {{employees.esal}}</li>
+    <li>Employee Address : {{employees.eaddr}}</li>
+</ul>
+<a href="/update/{{employees.id}}" class="btn btn-primary">Update</a>
+<a href="/delete/{{employees.id}}" class="btn btn-primary">Delete</a>
+{% endblock %}

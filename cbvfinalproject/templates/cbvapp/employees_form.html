@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends 'cbvapp/base.html' %}
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <h1>Insert your details here</h1><br>
+    {{form.as_p}}
+    <input type="submit" class="btn btn-primary" value="Submit">
+</form>
+{% endblock %}
